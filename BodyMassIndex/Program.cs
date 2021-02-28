@@ -22,6 +22,14 @@ namespace BodyMassIndex
             {
                 Console.WriteLine("Normal");
             }
+            else if (bmi >= 25 && bmi < 30)
+            {
+                Console.WriteLine("Fat");
+            }
+            else if (bmi >= 30 && bmi < 35)
+            {
+                Console.WriteLine("Obese");
+            }
 
         }
     }
