@@ -14,7 +14,14 @@ namespace BodyMassIndex
             Console.WriteLine("Please Enter Your Weigth");
             weigth = Convert.ToDouble(Console.ReadLine());
             bmi = weigth / (height*height);
-
+            if (bmi<18)
+            {
+                Console.WriteLine("Weak");
+            }
+            else if (bmi >= 18 && bmi < 25)
+            {
+                Console.WriteLine("Normal");
+            }
 
         }
     }
