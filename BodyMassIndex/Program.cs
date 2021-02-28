@@ -6,6 +6,9 @@ namespace BodyMassIndex
     {
         static void Main(string[] args)
         {
+            
+            Console.WriteLine("{0:r}", DateTime.Now);
+            
             OMERFDEV:
             int height, weigth, bmi;
             Console.WriteLine("Welcome To Body Mass Index");
