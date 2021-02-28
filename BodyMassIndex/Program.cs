@@ -6,35 +6,40 @@ namespace BodyMassIndex
     {
         static void Main(string[] args)
         {
-           
-            Double height, weigth, bmi;
+            OMERFDEV:
+            int height, weigth, bmi;
             Console.WriteLine("Welcome To Body Mass Index");
             Console.WriteLine("Please Enter Your Height");
-            height = Convert.ToDouble(Console.ReadLine());
+            height = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Please Enter Your Weigth");
-            weigth = Convert.ToDouble(Console.ReadLine());
-            bmi = weigth / (height*height);
-            if (bmi<18)
+            weigth = Convert.ToInt32(Console.ReadLine());
+            bmi = (weigth/((height * height)/10000));
+            if (bmi <= 18) 
             {
                 Console.WriteLine("Weak");
+                goto OMERFDEV;
             }
             else if (bmi >= 18 && bmi < 25)
             {
                 Console.WriteLine("Normal");
+                goto OMERFDEV;
             }
             else if (bmi >= 25 && bmi < 30)
             {
                 Console.WriteLine("Fat");
+                goto OMERFDEV;
             }
             else if (bmi >= 30 && bmi < 35)
             {
                 Console.WriteLine("Obese");
+                goto OMERFDEV;
             }
             else
             {
                 Console.WriteLine("Serious Obese");
+                goto OMERFDEV;
             }
-
+           
         }
     }
 }
