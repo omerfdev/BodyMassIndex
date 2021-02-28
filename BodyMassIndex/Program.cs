@@ -30,6 +30,10 @@ namespace BodyMassIndex
             {
                 Console.WriteLine("Obese");
             }
+            else
+            {
+                Console.WriteLine("Serious Obese");
+            }
 
         }
     }
